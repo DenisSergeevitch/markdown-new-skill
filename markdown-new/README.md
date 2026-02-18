@@ -43,6 +43,14 @@ python3 ~/.codex/skills/markdown-new/scripts/markdown_new_fetch.py 'https://exam
 
 If `--deliver-md` is used without `--output`, filename is auto-generated from the URL.
 
+## How It Works
+
+1. Validate the input URL (`http/https`).
+2. Call `POST https://markdown.new/` with `url`, `method`, and `retain_images`.
+3. Accept response as either raw markdown or JSON with markdown in `content`.
+4. Normalize metadata and choose output behavior.
+5. Return stdout by default, `--output` for files, and `--deliver-md` for wrapped `.md` packets.
+
 ## Install Paths
 
 - Codex (macOS/Linux): `~/.codex/skills/markdown-new`
