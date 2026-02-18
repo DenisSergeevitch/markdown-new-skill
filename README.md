@@ -1,6 +1,6 @@
 # Markdown.new Skill
 
-Single-skill repository for `markdown-new`.
+Single-skill repository for `markdown-new` - official Cloudflare URL-to-Markdown service ([markdown.new](https://markdown.new/)) converted into a skill.
 
 Skill entrypoint:
 - `markdown-new/SKILL.md`
