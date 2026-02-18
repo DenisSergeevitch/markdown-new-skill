@@ -1,0 +1,4 @@
+interface:
+  display_name: "Markdown.new"
+  short_description: "Convert web URLs to LLM-ready Markdown"
+  default_prompt: "Use $markdown-new to fetch clean Markdown from public URLs for summarization, RAG, or extraction tasks."
