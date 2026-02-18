@@ -31,6 +31,12 @@ git clone https://github.com/DenisSergeevitch/markdown-new-skill.git /tmp/markdo
 Use $markdown-new to convert web URLs into LLM-ready Markdown.
 ```
 
+Manual script invocation from any directory:
+
+```bash
+python3 ~/.codex/skills/markdown-new/scripts/markdown_new_fetch.py 'https://example.com'
+```
+
 ## Credits
 
 - `webservervis` for the markdown conversion service powering this skill.

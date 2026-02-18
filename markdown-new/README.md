@@ -13,6 +13,16 @@ Skill entrypoint:
 - optional image retention
 - optional wrapped delivery mode for downstream parsing
 
+## Path Resolution (Important)
+
+- Relative paths such as `scripts/markdown_new_fetch.py` are relative to the skill directory.
+- Do not run `python3 scripts/markdown_new_fetch.py ...` from workspace root unless `scripts/` exists there.
+- Safe command from any current directory:
+
+```bash
+python3 ~/.codex/skills/markdown-new/scripts/markdown_new_fetch.py 'https://example.com'
+```
+
 ## Modes
 
 ### Conversion Modes (`--method`)

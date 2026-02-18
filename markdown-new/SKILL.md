@@ -7,6 +7,26 @@ description: "Convert public web pages into clean Markdown with markdown.new for
 
 Use this skill to convert public URLs into LLM-ready Markdown via [markdown.new](https://markdown.new).
 
+## Path Resolution (Critical)
+
+- Resolve relative paths like `scripts/...` and `references/...` from the skill directory, not workspace root.
+- If current directory is unknown, use an absolute script path.
+
+```bash
+python3 ~/.codex/skills/markdown-new/scripts/markdown_new_fetch.py 'https://example.com'
+```
+
+```bash
+cd ~/.codex/skills/markdown-new
+python3 scripts/markdown_new_fetch.py 'https://example.com'
+```
+
+Avoid this pattern from an arbitrary workspace root:
+
+```bash
+python3 scripts/markdown_new_fetch.py 'https://example.com'
+```
+
 ## Workflow
 
 1. Validate the input URL is public `http` or `https`.
@@ -16,6 +36,8 @@ Use this skill to convert public URLs into LLM-ready Markdown via [markdown.new]
 5. Capture response metadata (`x-markdown-tokens`, `x-rate-limit-remaining`, and JSON metadata when present) for downstream planning.
 
 ## Quick Start
+
+Commands below assume current directory is the skill root (`~/.codex/skills/markdown-new`).
 
 ```bash
 python3 scripts/markdown_new_fetch.py 'https://example.com' > page.md
