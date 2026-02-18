@@ -30,3 +30,7 @@ git clone https://github.com/DenisSergeevitch/markdown-new-skill.git /tmp/markdo
 ```md
 Use $markdown-new to convert web URLs into LLM-ready Markdown.
 ```
+
+## Credits
+
+- `webservervis` for the markdown conversion service powering this skill.

@@ -59,3 +59,7 @@ python3 scripts/markdown_new_fetch.py 'https://example.com'
 python3 scripts/markdown_new_fetch.py 'https://example.com' --method browser --retain-images --output page.md
 python3 scripts/markdown_new_fetch.py 'https://example.com' --deliver-md
 ```
+
+## Credits
+
+- `webservervis` for the markdown conversion service powering this skill.
