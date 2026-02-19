@@ -33,7 +33,7 @@ python3 ~/.codex/skills/markdown-new/scripts/markdown_new_fetch.py 'https://exam
 ### Output Modes
 - default: print Markdown to stdout
 - `--output <file>`: write Markdown to file
-- `--deliver-md`: write `.md` output with wrapped content:
+- `--deliver-md`: write `.md` output with wrapped content; useful for reasoning LLMs on long reads because it reduces format confusion:
 
 ```text
 <url>

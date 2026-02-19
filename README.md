@@ -23,7 +23,7 @@ Skill entrypoint:
 
 - standard output: print markdown directly to terminal/stdout (good for pipes).
 - file output: `--output <path>` writes markdown to a file.
-- wrapped delivery mode: `--deliver-md` writes markdown wrapped in pseudo-XML tags:
+- wrapped delivery mode: `--deliver-md` writes markdown wrapped in pseudo-XML tags, which is useful for reasoning LLMs on long reads and reduces format confusion:
 
 ```text
 <url>
